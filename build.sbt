@@ -18,9 +18,9 @@ val specsVersion = "4.0.0"
 
 libraryDependencies ++= Seq(
   // Scalaz
-  "org.scalaz" %% "scalaz-core" % scalazVersion,
-  "org.scalaz" %% "scalaz-effect" % scalazVersion,
-  "org.scalaz" %% "scalaz-concurrent" % scalazVersion,
+//  "org.scalaz" %% "scalaz-core" % scalazVersion,
+//  "org.scalaz" %% "scalaz-effect" % scalazVersion,
+//  "org.scalaz" %% "scalaz-concurrent" % scalazVersion,
 
   // Cats
   "org.typelevel" %% "cats-core" % catsVersion,
@@ -46,17 +46,17 @@ libraryDependencies ++= Seq(
   "io.circe" %% "circe-parser" % circeVersion,
 
   // Argonaut
-  "io.argonaut" %% "argonaut" % argonautVersion,
-  "io.argonaut" %% "argonaut-monocle" % argonautVersion,
-  "io.argonaut" %% "argonaut-cats" % argonautVersion, // Cats
-  "io.argonaut" %% "argonaut-scalaz" % argonautVersion,  // Scalaz
+//  "io.argonaut" %% "argonaut" % argonautVersion,
+//  "io.argonaut" %% "argonaut-monocle" % argonautVersion,
+//  "io.argonaut" %% "argonaut-cats" % argonautVersion, // Cats
+//  "io.argonaut" %% "argonaut-scalaz" % argonautVersion,  // Scalaz
 
   // Doobie scalaz
-  "org.tpolecat" %% "doobie-core" % doobieVersion, // scalaz
-  "org.tpolecat" %% "doobie-h2" % doobieVersion, // scalaz
-  "org.tpolecat" %% "doobie-hikari" % doobieVersion, // scalaz
-  "org.tpolecat" %% "doobie-postgres" % doobieVersion, // scalaz
-  "org.tpolecat" %% "doobie-specs2" % doobieVersion, // scalaz
+//  "org.tpolecat" %% "doobie-core" % doobieVersion, // scalaz
+//  "org.tpolecat" %% "doobie-h2" % doobieVersion, // scalaz
+//  "org.tpolecat" %% "doobie-hikari" % doobieVersion, // scalaz
+//  "org.tpolecat" %% "doobie-postgres" % doobieVersion, // scalaz
+//  "org.tpolecat" %% "doobie-specs2" % doobieVersion, // scalaz
 
   // Doobie cats
   "org.tpolecat" %% "doobie-core-cats" % doobieVersion, // cats
