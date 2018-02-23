@@ -67,7 +67,13 @@ libraryDependencies ++= Seq(
 
   // Test
   "org.specs2" %% "specs2-core" % specsVersion % "test",
-  "org.scalacheck" %% "scalacheck" % scalacheckVersion % "test"
+  "org.scalacheck" %% "scalacheck" % scalacheckVersion % "test",
+
+  // https://mvnrepository.com/artifact/org.neo4j/neo4j-common
+  "org.neo4j" % "neo4j-common" % "3.3.3",
+  "org.neo4j" % "neo4j-cypher" % "3.3.3",
+  "org.neo4j.driver" % "neo4j-java-driver" % "1.5.1",
+  "org.neo4j" % "neo4j-ogm" % "3.1.0" //pomOnly()
 )
 
 // For macro annotations
