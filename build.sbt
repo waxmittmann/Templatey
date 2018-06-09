@@ -2,19 +2,19 @@ name := "Templatey"
 
 version := "0.1"
 
-scalaVersion := "2.12.4"
+scalaVersion := "2.12.6"
 
-val argonautVersion = "6.2"
-val catsVersion = "1.0.0-RC1"
-val catsEffectVersion = "0.5"
-val circeVersion = "0.8.0"
-val doobieVersion = "0.4.4"
-val http4sVersion = "0.17.5"
-val monocleVersionScalaz = "1.4.0"
-val monocleVersionCats = "1.5.0-cats-M1"
-val scalazVersion = "7.2.16"
-val scalacheckVersion = "1.13.4"
-val specsVersion = "4.0.0"
+val argonautVersion = "6.2" // todo: update
+val catsVersion = "1.1.0"
+val catsEffectVersion = "0.10.1"
+val circeVersion = "0.9.3"
+val doobieVersion = "0.4.4" // todo: update
+val http4sVersion = "0.17.5" // todo: update
+val monocleVersionScalaz = "1.4.0" // todo: update
+val monocleVersionCats = "1.5.0-cats-M1" // todo: update
+val scalazVersion = "7.2.16" // todo: update
+val scalacheckVersion = "1.13.4" // todo: update
+val specsVersion = "4.0.0" // todo: update
 
 // Todo: Factor out dependencies
 libraryDependencies ++= Seq(
