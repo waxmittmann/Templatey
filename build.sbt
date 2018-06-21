@@ -15,6 +15,12 @@ val monocleVersionCats = "1.5.0-cats-M1" // todo: update
 val scalazVersion = "7.2.16" // todo: update
 val scalacheckVersion = "1.13.4" // todo: update
 val specsVersion = "4.0.0" // todo: update
+val neo4jBase = "3.3.3"
+val neo4jDriver = "1.5.1"
+
+val neo4jVersions = Map[String, String](
+  "ogm" -> "3.1.0"
+)
 
 // Todo: Factor out dependencies
 libraryDependencies ++= Seq(
@@ -66,8 +72,16 @@ libraryDependencies ++= Seq(
 //  "org.tpolecat" %% "doobie-postgres-cats" % doobieVersion, // scalaz
 //  "org.tpolecat" %% "doobie-specs2-cats" % doobieVersion, // scalaz
 
+  // Neo4j
+//  "org.neo4j" % "neo4j" % neo4jBase,
+//  "org.neo4j" % "neo4j-common" % neo4jBase,
+//  "org.neo4j" % "neo4j-cypher" % neo4jBase,
+//  "org.neo4j" % "neo4j-bolt" % neo4jBase,
+//  "org.neo4j.driver" % "neo4j-java-driver" % neo4jDriver,
+
+
   // PureConfig
-//  "com.github.pureconfig" %% "pureconfig" % "0.9.1"
+  //  "com.github.pureconfig" %% "pureconfig" % "0.9.1"
 
   // Test
   "org.specs2" %% "specs2-core" % specsVersion % "test",
