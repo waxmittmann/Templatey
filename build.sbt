@@ -83,6 +83,9 @@ libraryDependencies ++= Seq(
   // PureConfig
   //  "com.github.pureconfig" %% "pureconfig" % "0.9.1"
 
+  // Shapeless
+  //"com.chuusai" %% "shapeless" % "2.3.3",
+
   // Test
   "org.specs2" %% "specs2-core" % specsVersion % "test",
   "org.scalacheck" %% "scalacheck" % scalacheckVersion % "test"
