@@ -2,24 +2,24 @@ name := "Templatey"
 
 version := "0.1"
 
-scalaVersion := "2.12.6"
+scalaVersion := "2.12.8"
 
+val catsVersion = "1.6.0"
+val catsEffectVersion = "1.2.0"
+val circeVersion = "0.11.1"
+val http4sVersion = "0.18.23"
+val specsVersion = "4.3.4"
 val argonautVersion = "6.2" // todo: update
-val catsVersion = "1.1.0"
-val catsEffectVersion = "0.10.1"
-val circeVersion = "0.9.3"
 val doobieVersion = "0.4.4" // todo: update
-val http4sVersion = "0.17.5" // todo: update
 val monocleVersionScalaz = "1.4.0" // todo: update
 val monocleVersionCats = "1.5.0-cats-M1" // todo: update
 val scalazVersion = "7.2.16" // todo: update
 val scalacheckVersion = "1.13.4" // todo: update
-val specsVersion = "4.0.0" // todo: update
-val neo4jBase = "3.3.3"
-val neo4jDriver = "1.5.1"
+val neo4jBase = "3.3.3" // todo: update
+val neo4jDriver = "1.5.1" // todo: update
 
 val neo4jVersions = Map[String, String](
-  "ogm" -> "3.1.0"
+  "ogm" -> "3.1.0" // todo: update
 )
 
 // Todo: Factor out dependencies
@@ -31,7 +31,7 @@ libraryDependencies ++= Seq(
 
   // Cats
   "org.typelevel" %% "cats-core" % catsVersion,
-//  "org.typelevel" %% "cats-effect" % catsEffectVersion,
+  "org.typelevel" %% "cats-effect" % catsEffectVersion,
 //  "org.typelevel" %% "cats-mtl" % catsVersion,
 //  "org.typelevel" %% "dogs-core" % "0.6.9",
 
@@ -44,13 +44,13 @@ libraryDependencies ++= Seq(
 //  "com.github.julien-truffaut" %%  "monocle-law"   % monocleVersionCats % "test",
 
   // Http4s
-//  "org.http4s" %% "http4s-core" % http4sVersion,
-//  "org.http4s" %% "http4s-dsl" % http4sVersion,
+  "org.http4s" %% "http4s-core" % http4sVersion,
+  "org.http4s" %% "http4s-dsl" % http4sVersion,
 
   // Circe
-//  "io.circe" %% "circe-core" % circeVersion,
-//  "io.circe" %% "circe-generic" % circeVersion,
-//  "io.circe" %% "circe-parser" % circeVersion,
+  "io.circe" %% "circe-core" % circeVersion,
+  "io.circe" %% "circe-generic" % circeVersion,
+  "io.circe" %% "circe-parser" % circeVersion,
 
   // Argonaut
 //  "io.argonaut" %% "argonaut" % argonautVersion,
